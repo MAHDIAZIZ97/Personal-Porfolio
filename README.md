@@ -42,7 +42,7 @@ git clone https://github.com/MAHDIAZIZ97/Personal-Porfolio.git
 
 ### Navigate to the Project Directory
 ```bash
-cd Personal-Portfoliio
+cd Personal-Portfolio
 ```
 
 ### Open in Browser
