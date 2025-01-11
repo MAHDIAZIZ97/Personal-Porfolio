@@ -37,12 +37,12 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/<repository-name>.git
+git clone https://github.com/MAHDIAZIZ97/Personal-Porfolio.git
 ```
 
 ### Navigate to the Project Directory
 ```bash
-cd <repository-name>
+cd Personal-Portfoliio
 ```
 
 ### Open in Browser
@@ -80,8 +80,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Feel free to reach out to me for any queries or collaborations:
 
 - **Email**: your.email@example.com
-- **LinkedIn**: [](https://www.linkedin.com/in/mahdi-aziz-mollah-8515162ab/)
-- **GitHub**: [](https://github.com/MAHDIAZIZ97)
+- **LinkedIn**: [linkedin](https://www.linkedin.com/in/mahdi-aziz-mollah-8515162ab/)
+- **GitHub**: [github](https://github.com/MAHDIAZIZ97)
 
 ---
 
