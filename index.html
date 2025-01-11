@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Aziz M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden font-Outfit leading-5 dark:bg-darkTheme dark:text-white">
+    <div class="fixed top-0 right-0  w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="./Resources/bg-color-4.avif" alt="bg-color" class="w-full">
+    </div>
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+    <div class="text-cyan-800 text-4xl font-semibold">Aziz M.</div>
+    <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-lg bg-opacity-40 font-Ovo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#myprojects">My Projects</a></li>    
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+    <div class="flex items-center gap-5">
+        <button onclick="toggleTheme()">
+            <box-icon name='moon' color='#1d44a2' class="dark:hidden" title="dark"></box-icon>
+            <box-icon name='sun' color='#1d44a2' class="hidden dark:block" title="light"></box-icon>
+        </button>
+    <a href="#contact" class="hidden lg:flex items-center px-8 py-2 border border-gray-500 rounded-full ml-4
+    ">
+        Contact <box-icon name='right-arrow-alt'></box-icon></a>
+
+    <button class="block md:hidden ml-3 " onclick="openMenu()">
+        <box-icon name='menu-alt-right' class="size-8 dark:hidden"></box-icon>
+        <box-icon name='menu-alt-right' color='#ffffff' class="size-8 hidden dark:block"></box-icon>
+    </button>
+    </div>
+    <!-- mobile view -->
+     <ul id="side-menu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0
+     bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 gap-4 font-Ovo dark:bg-rose-400">
+        <div class="absolute right-5 top-5" onclick="closeMenu()">
+            <img src="./Resources/close.png" alt="" class="w-10 cursor-pointer">
+        </div>
+        <li><a href="#" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#myprojects" onclick="closeMenu()">My Projects</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>
+     </ul>
+    </nav>
+
+    <!-- header -->
+     <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center
+     gap-4">
+        <img src="./Resources/img1.png" alt="myImg1" class="rounded-full max-w-32">
+        <h3 class="text-2xl md:text-xl">Hi, I am AZIZ M.</h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[4rem]">Web Developer from Howrah,India.</h1>
+        <p class="max-w-2xl mx-auto"
+        >I am a full stack web developer from Uluberia,Howrah, with experience in Travarsa Technology.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-8 text-white py-3 border rounded-full bg-gradient-to-r from-[#b820e6]
+             to-[#da7d20] text-wrap flex items-center gap-2">Contact Me <box-icon name='right-arrow-alt' color='#ffffff' >
+             </box-icon></a>
+            <a href="./Resources/AzizCV.pdf" download class="px-8 py-3 border rounded-full border-cyan-500  text-wrap flex
+             items-center gap-2 bg-slate-100 dark:text-black">My Resume<box-icon name='right-arrow-alt' rotate='90' ></box-icon></a>  
+        </div>
+     </div>
+
+     <!-- about me -->
+      <div class="w-full px-[12%] py-10 scroll-mt-20" id="about">
+        <h4 class="text-center mb-2 text-lg">Introduction</h4>
+        <h2 class="text-center text-5xl">About Me</h2>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="./Resources/img2.webp" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+                <div class="bg-white w-1/2 absolute aspect-square right-0 bottom-0 rounded-full
+                translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex
+                items-center justify-center">
+                <img src="/Resources/WEB.png" alt="" class="w-full -mt-8  md:mx-1 mx-2 ">
+                <box-icon name='user-circle' class="w-1/4 absolute size-[4rem]"></box-icon>
+                </div>
+             </div>
+             <div class="flex-1">
+                <p class="mb-10 max-w-2xl">
+                    I am a web developer with about one year of experience, specializing in HTML, CSS, 
+                    Tailwind, JavaScript, and PHP. I am passionate about creating responsive and dynamic 
+                    websites, leveraging my skills to build user-friendly and efficient web applications.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-auto gap-5 max-w-2xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+                    hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                        <box-icon name='code-alt' class="w-7 mt-3 "></box-icon>
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-500 text-sm overflow-x-hidden dark:text-white ">HTML,CSS,JS,PHP,NEXT JS,LARAVEL</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+                    hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                    <box-icon type='solid' name='graduation' class="w-7 mt-3"></box-icon>
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-gray-500 text-sm dark:text-white">Masters in Computer application.</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+                    hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                    <box-icon type='solid' name='shopping-bags' class="w-7 mt-3"></box-icon>
+                        <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                        <p class="text-gray-500 text-sm dark:text-white" >Builts more than 3 projects and continue.</p>
+                    </li>
+                   
+                </ul>
+                <h4 class="my-6 text-gray-700 dark:text-white">
+                    Tools I use 
+                </h4>
+                  <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-15 aspect-[4/4] border 
+                    border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:bg-lightHover  ">
+                        <img src="/Resources/vscode.png" alt="vs" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-15 aspect-[4/4] border 
+                    border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:bg-lightHover  ">
+                        <img src="/Resources/canva.png" alt="vs" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-15 aspect-[4/4] border 
+                    border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:bg-lightHover  ">
+                        <img src="/Resources/jupyter.png" alt="vs" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-15 aspect-[4/4] border 
+                    border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:bg-lightHover  ">
+                        <img src="/Resources/figma.webp" alt="vs" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-15 aspect-[4/4] border 
+                    border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:bg-lightHover  ">
+                        <img src="/Resources/intellij2.png" alt="vs" class="w-5 sm:w-7">
+                        
+                    </li>
+                  </ul>
+             </div>
+        </div>
+      </div>
+      <!-- services -->
+       <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">What I offer</h4>
+        <h2 class="text-center text-5xl">My Services</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+            I am a full stack web developer with a passion for creating engaging and user-friendly websites.
+            I specialize in HTML, CSS, Tailwind, JavaScript, and PHP. I offer services such as web development,
+            web design, and digital marketing. My goal is to help you create a beautiful and effective online presence.
+        </p>
+
+        <div class="grid grid-cols-auto  gap-6 my-10">
+            <div class="border border-gray-400 rounded-lg px-8 py-12 
+            hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1
+            duration-500 dark:hover:text-black ">
+                <img src="/Resources/wd.png" alt="" class="w-10">
+                <h3 class="text-large my-4 text-gray-700 dark:text-white ">Web Design</h3>
+                  <p class="text-sm  text-gray-600 leading-5 dark:text-white dark:hover:text-black">
+                    I help you design visually appealing and user-friendly websites using HTML, CSS, and Tailwind.
+                   
+                  </p>
+                  <a href="" class="flex items-center gap-2 text-sm mt-5 dark:text-white dark:hover:text-black">Read More<box-icon name='right-arrow-alt' ></box-icon></a>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12 
+            hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1
+            duration-500">
+                <img src="/Resources/wd.png" alt="" class="w-10">
+                <h3 class="text-large my-4 text-gray-700 dark:text-white">Web Design</h3>
+                  <p class="text-sm  text-gray-600 leading-5 dark:text-white dark:hover:text-black ">
+                    I help you design visually appealing and user-friendly websites using HTML, CSS, and Tailwind.
+                   
+                  </p>
+                  <a href="" class="flex items-center gap-2 text-sm mt-5">Read More<box-icon name='right-arrow-alt' ></box-icon></a>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12 
+            hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1
+            duration-500">
+                <img src="/Resources/wd.png" alt="" class="w-10">
+                <h3 class="text-large my-4 text-gray-700 dark:text-white">Web Design</h3>
+                  <p class="text-sm  text-gray-600 leading-5 dark:text-white dark:hover:text-black">
+                    I help you design visually appealing and user-friendly websites using HTML, CSS, and Tailwind.
+                   
+                  </p>
+                  <a href="" class="flex items-center gap-2 text-sm mt-5">Read More<box-icon name='right-arrow-alt' ></box-icon></a>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12 
+            hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1
+            duration-500">
+                <img src="/Resources/wd.png" alt="" class="w-10">
+                <h3 class="text-large my-4 text-gray-700 dark:text-white ">Web Design</h3>
+                  <p class="text-sm  text-gray-600 leading-5 dark:text-white dark:hover:text-black">
+                    I help you design visually appealing and user-friendly websites using HTML, CSS, and Tailwind.
+                   
+                  </p>
+                  <a href="" class="flex items-center gap-2 text-sm mt-5">Read More<box-icon name='right-arrow-alt' ></box-icon></a>
+            </div>
+        </div>
+       </div>
+
+       <!-- my work -->
+       <div id="myprojects" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
+        <h2 class="text-center text-5xl">My Latest Work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+            Welcome to my portfolio website.Here are some of my recent projects that I have worked on.
+            Just explore and review us. It helps me to improve in future.
+        </p>
+            <div class="grid grid-cols-auto gap-5 my-10">
+                <div class="aspect-square bg-[url('/Resources/localfarmer.png')] bg-no-repeat
+                bg-cover bg-center rounded-lg  relative cursor-pointer group">
+                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2
+                    -translate-x-1/2 py-3 px-5 flex items-center justify-between
+                    duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">Frontend </h2>
+                        <p class="text-sm text-gray-700">Web Design</p>
+                    </div>
+                    <div class="border rounded-full broder-black w-9 aspect-square
+                    flex justify-center items-center shadow-[2px_2px_0px_#000] group-hover:bg-rose-400
+                    duration-500">
+                        <box-icon name='send' type='solid' flip='vertical' ></box-icon>
+                    </div>
+                      
+
+                    </div>
+                      
+                </div>
+
+
+                <div class="aspect-square bg-[url('/Resources/localfarmer.png')] bg-no-repeat
+                bg-cover bg-center rounded-lg  relative cursor-pointer group">
+                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2
+                    -translate-x-1/2 py-3 px-5 flex items-center justify-between
+                    duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">Frontend </h2>
+                        <p class="text-sm text-gray-700">Web Design</p>
+                    </div>
+                    <div class="border rounded-full broder-black w-9 aspect-square
+                    flex justify-center items-center shadow-[2px_2px_0px_#000] group-hover:bg-rose-400
+                    duration-500">
+                        <box-icon name='send' type='solid' flip='vertical' ></box-icon>
+                    </div>
+                    </div>        
+                </div>
+                <div class="aspect-square bg-[url('/Resources/localfarmer.png')] bg-no-repeat
+                bg-cover bg-center rounded-lg  relative cursor-pointer group">
+                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2
+                    -translate-x-1/2 py-3 px-5 flex items-center justify-between
+                    duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">Frontend </h2>
+                        <p class="text-sm text-gray-700">Web Design</p>
+                    </div>
+                    <div class="border rounded-full broder-black w-9 aspect-square
+                    flex justify-center items-center shadow-[2px_2px_0px_#000] group-hover:bg-rose-400
+                    duration-500">
+                        <box-icon name='send' type='solid' flip='vertical' ></box-icon>
+                    </div>
+                    </div>
+                </div>
+                <div class="aspect-square bg-[url('/Resources/localfarmer.png')] bg-no-repeat
+                bg-cover bg-center rounded-lg  relative cursor-pointer group">
+                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2
+                    -translate-x-1/2 py-3 px-5 flex items-center justify-between
+                    duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">Frontend </h2>
+                        <p class="text-sm text-gray-700">Web Design</p>
+                    </div>
+                    <div class="border rounded-full broder-black w-9 aspect-square
+                    flex justify-center items-center shadow-[2px_2px_0px_#000] group-hover:bg-rose-400
+                    duration-500">
+                        <box-icon name='send' type='solid' flip='vertical' ></box-icon>
+                    </div>
+                      
+
+                    </div>
+                      
+                </div>
+                
+            </div>
+            <a href="" class="w-max flex items-center justify-center gap-2 text-gray-700
+            border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20
+            hover:bg-lightHover duration-500 ">Show More
+        
+            <box-icon name='right-arrow-alt'></box-icon></a>
+        </div>
+        <!-- contact -->
+        <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20  font-Ovo">
+            <h4 class="text-center mb-2 text-lg">Connect with me</h4>
+            <h2 class="text-center text-5xl">Get in touch</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+               I would like to hear from you.If you have any quaries please connect with through this form.
+            </p>
+
+            <form action="" class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-auto  gap-6 mt-10 mb-8">
+                    <input type="text" placeholder="enter your name" class="flex-1 p-3 outline-none
+                    border-[0.5px] border-gray-500 rounded-md bg-white dark:text-black">
+                    <input type="email" placeholder="enter your email" class="flex-1 p-3 outline-none
+                    border-[0.5px] border-gray-500 rounded-md bg-white dark:text-black">
+                </div>
+                <textarea name="" id="" row="6" placeholder="enter you message"
+                class="w-full p-4 outline-none border-[0.5px] border-gray-500 rounded-md bg-white mb-6 dark:text-black">
+            </textarea>
+            <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
+            text-white rounded-full mx-auto hover:bg-black duration-500">Submit Now
+                <box-icon name='right-arrow-alt' color="#ffffff"></box-icon></a>
+            </button>
+            </form>
+        </div>
+
+        <!-- footer -->
+         <div class="mt-20">
+            <div class="text-center">
+                <div class="text-cyan-800 text-4xl font-semibold">Aziz M.</div>
+                <div class="w-max flex items-center gap-3 mx-auto">
+                    <box-icon name='envelope' class="dark:hidden"></box-icon>
+                    <box-icon name='envelope' class="bg-[#ffffff] hidden dark:block"></box-icon>
+                    beingaziz@gmail.com
+                </div>
+            </div>
+            <div class="text-center sm:flex items-center justify-between border-t border-gray-400
+            mx-[10%] mt-12 py-6">
+                <p>&#169 Aziz M.All rights reserved.</p>
+                <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                    <li> <a href="#">Github</a></li>
+                    <li> <a href="#">LinkedIn</a></li>
+                    <li> <a href="#">Whatsapp</a></li>
+                </ul>
+                
+            </div>
+         </div>
+    
+        
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/dist/boxicons.min.js"></script>
+</body>
+</html>
