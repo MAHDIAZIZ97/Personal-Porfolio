@@ -79,7 +79,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Feel free to reach out to me for any queries or collaborations:
 
-- **Email**: your.email@example.com
+- **Email**: beingaziz97@gmail.com
 - **LinkedIn**: [linkedin](https://www.linkedin.com/in/mahdi-aziz-mollah-8515162ab/)
 - **GitHub**: [github](https://github.com/MAHDIAZIZ97)
 
